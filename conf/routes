@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET         /login                       controllers.UserController.login
+
+GET         /                            controllers.UserController.index
+
+GET         /home                        controllers.UserController.home
+
+GET         /loginBySocialSite           controllers.UserController.loginBySocialSite
+
+GET         /loginUrl/:socialId          controllers.UserController.doLogin(socialId:String)
+
+GET         /assets/*file                controllers.Assets.at(file)
+
+GET         /removecookie                controllers.UserController.removeCookie
